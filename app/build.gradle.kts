@@ -56,4 +56,13 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.accompanist.pager)
+    implementation(libs.accompanist.pager.indicators)
+
+    // Coil for Jetpack Compose
+    implementation(libs.coil.compose)
+
+    // System UI Controller (status bar / nav bar colors)
+    implementation(libs.accompanist.systemuicontroller)
 }
