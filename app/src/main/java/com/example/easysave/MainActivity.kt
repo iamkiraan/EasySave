@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.WindowCompat
+import com.example.easysave.VerificationScreen.LoginScreen
 import com.example.easysave.onBoardingScreens.IntroScreen
 import com.example.easysave.ui.theme.EasySaveTheme
 
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             EasySaveTheme(darkTheme = false, dynamicColor = false) {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    IntroScreen()
+                    LoginScreen()
 
                 }
             }
