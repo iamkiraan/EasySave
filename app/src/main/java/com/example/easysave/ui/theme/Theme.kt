@@ -26,7 +26,8 @@ val LightColors: ColorScheme = lightColorScheme(
     onError = lightDestructiveForeground,
     surfaceContainer = lightaccent,
     outline = lightSideBar,
-    tertiary = Color.Black
+    tertiary = Color.Black,
+    surfaceTint = lightaccentForeground
 
 
 )
@@ -44,7 +45,8 @@ val DarkColors: ColorScheme = darkColorScheme(
     onError = darkDestructiveForeground,
     surfaceContainer = darkaccent,
     outline = darkSideBar,
-    tertiary = Color.White
+    tertiary = Color.White,
+    surfaceTint = darkaccentForeground
 
 )
 @Composable

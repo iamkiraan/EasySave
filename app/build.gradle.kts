@@ -65,4 +65,7 @@ dependencies {
 
     // System UI Controller (status bar / nav bar colors)
     implementation(libs.accompanist.systemuicontroller)
+
+    //navigtion
+    implementation(libs.androidx.navigation.compose)
 }
