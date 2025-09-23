@@ -33,6 +33,7 @@ val lightSideBar = Color(0xFFf0fff6)
 val lightSideBarForeground = Color(0xFF0f1724)
 val lightSideBarPrimary = Color(0xFF6bd39b)
 val lightSideBarPrimaryForeground = Color(0xFFffffff)
+val LightfontColor = Color(0xFF000000)
 
 
 
@@ -62,6 +63,7 @@ val darkSideBar = Color(0xFFffffff)
 val darkSideBarForeground = Color(0xFF4a4a4a)
 val darkSideBarPrimary = Color(0xFFe8e8e8)
 val darkSideBarPrimaryForeground = Color(0xFF000000)
+val DarkFontCOlor = Color.White
 
 
 

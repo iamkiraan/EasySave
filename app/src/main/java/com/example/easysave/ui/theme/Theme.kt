@@ -27,7 +27,8 @@ val LightColors: ColorScheme = lightColorScheme(
     surfaceContainer = lightaccent,
     outline = lightSideBar,
     tertiary = Color.Black,
-    surfaceTint = lightaccentForeground
+    surfaceTint = lightaccentForeground,
+    surfaceDim = LightfontColor //font color ko lagi
 
 
 )
@@ -46,7 +47,8 @@ val DarkColors: ColorScheme = darkColorScheme(
     surfaceContainer = darkaccent,
     outline = darkSideBar,
     tertiary = Color.White,
-    surfaceTint = darkaccentForeground
+    surfaceTint = darkaccentForeground,
+    surfaceDim = DarkFontCOlor //font color ko lagi
 
 )
 @Composable
