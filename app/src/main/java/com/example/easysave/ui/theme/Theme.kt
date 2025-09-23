@@ -28,7 +28,8 @@ val LightColors: ColorScheme = lightColorScheme(
     outline = lightSideBar,
     tertiary = Color.Black,
     surfaceTint = lightaccentForeground,
-    surfaceDim = LightfontColor //font color ko lagi
+    surfaceDim = LightfontColor, //font color ko lagi
+    surfaceBright = lightmutedForeground //text in box ko lagi grey wala
 
 
 )
@@ -48,7 +49,8 @@ val DarkColors: ColorScheme = darkColorScheme(
     outline = darkSideBar,
     tertiary = Color.White,
     surfaceTint = darkaccentForeground,
-    surfaceDim = DarkFontCOlor //font color ko lagi
+    surfaceDim = DarkFontCOlor, //font color ko lagi
+    surfaceBright = darkmutedForeground //text inside box ko lagi grey wala
 
 )
 @Composable
