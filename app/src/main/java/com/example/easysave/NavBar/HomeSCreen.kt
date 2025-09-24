@@ -52,14 +52,14 @@ import kotlin.math.sign
 
 @OptIn(ExperimentalMaterial3Api::class)
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
-//@Preview(showBackground = true)
+@Preview(showBackground = true)
 @Composable
 fun HomeScreen(){
     val scrollState = rememberScrollState()
     val navController = rememberNavController()
     val totalScrollable = rememberScrollState()
     Scaffold (
-        topBar = {EasySaveTopBar()},
+        topBar = {EasySaveTopBar("DashBoard")},
 
     ){ innerPadding ->
 
@@ -67,8 +67,6 @@ fun HomeScreen(){
             modifier = Modifier.fillMaxSize()
                 .background(Color.White)
                 .padding(innerPadding)
-
-
             ,
             horizontalAlignment = Alignment.CenterHorizontally
         ){

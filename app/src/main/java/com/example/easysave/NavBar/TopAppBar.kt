@@ -6,9 +6,12 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -29,43 +32,58 @@ import androidx.compose.ui.unit.sp
 import com.example.easysave.R
 
 @Composable
-fun EasySaveTopBar() {
-    Row(
-        modifier = Modifier.fillMaxWidth()
-            .padding(start = 16.dp,end = 16.dp),
-        verticalAlignment = Alignment.CenterVertically,
-
-        ){
-        Box(
-            modifier = Modifier
-                .size(40.dp)
-                .clip(CircleShape)
-                .background(Color(0xFF006400)),
-            contentAlignment = Alignment.Center
+fun EasySaveTopBar(
+    title: String
+) {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Color.White) // top bar bg
+            .padding(
+             //   top = WindowInsets.statusBars.asPaddingValues().calculateTopPadding(),
+                start = 16.dp,
+                end = 16.dp,
+                bottom = 8.dp
+            )
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Image(
-                painter = painterResource(R.drawable.logo),
-                contentDescription = "App Logo",
-                modifier = Modifier.size(20.dp)
+            // Logo circle
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape)
+                    .background(Color(0xFF00C27A)), // green accent
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.logo),
+                    contentDescription = "App Logo",
+                    modifier = Modifier.size(20.dp)
+                )
+            }
+
+            Spacer(modifier = Modifier.width(8.dp))
+
+            // App name
+            Text(
+                text = "EasySave",
+                color = Color.Black,
+                fontWeight = FontWeight.Bold,
+                fontSize = 18.sp
+            )
+
+            Spacer(modifier = Modifier.weight(1f))
+
+            // Screen title
+            Text(
+                text = title,
+                color = Color.Black,
+                fontWeight = FontWeight.Bold,
+                fontSize = 18.sp
             )
         }
-        Spacer(modifier = Modifier.width(10.dp))
-
-        Text(
-            text ="EasySave",
-            color = MaterialTheme.colorScheme.surfaceDim,
-            fontWeight = FontWeight.Bold
-        )
-
-        Spacer(modifier = Modifier.weight(1f))
-        Text(
-            text ="DashBoard",
-            color = MaterialTheme.colorScheme.surfaceDim,
-            fontWeight = FontWeight.Bold
-        )
-
-
-
-
     }
 }
