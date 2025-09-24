@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             EasySaveTheme(darkTheme = false, dynamicColor = false) {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ProfileScreen()
+                    MainScreen()
 
                 }
             }
