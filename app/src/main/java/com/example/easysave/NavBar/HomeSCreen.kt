@@ -52,7 +52,7 @@ import kotlin.math.sign
 
 @OptIn(ExperimentalMaterial3Api::class)
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
-@Preview(showBackground = true)
+//@Preview(showBackground = true)
 @Composable
 fun HomeScreen(){
     val scrollState = rememberScrollState()
@@ -245,7 +245,7 @@ fun RecentLoans() {
     Card(
         modifier = Modifier
             .fillMaxWidth(0.9f)
-            .height(80.dp),
+            .height(60.dp),
         shape = RoundedCornerShape(15.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
         border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary),
@@ -282,12 +282,12 @@ fun RecentLoans() {
                 Text(
                     text = "Kiran Acharya",
                     color = MaterialTheme.colorScheme.surfaceDim,
-                    fontSize = 18.sp
+                    fontSize = 16.sp
                 )
                 Text(
                     text = "Today",
                     color = MaterialTheme.colorScheme.surfaceBright,
-                    fontSize = 14.sp
+                    fontSize = 12.sp
                 )
             }
 
